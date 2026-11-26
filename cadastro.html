@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cadastrar pet | YourPets</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><a class="brand" href="home.html"><span class="brand-mark">🐾</span>Your<span>Pets</span></a><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button><nav class="nav"><a href="home.html">Início</a><a href="vacinas.html">Vacinas</a><a href="saude.html">Saúde</a><a href="encontrar.html">Perto de você</a><a class="nav-cta active" href="cadastro.html">Cadastrar pet <span>＋</span></a></nav></header>
+<main>
+  <section class="page-hero"><p class="crumb"><a href="home.html">Início</a> / Meu pet</p><p class="eyebrow">CADA PET É ÚNICO</p><h1>Vamos conhecer<br>seu companheiro?</h1><p>Crie um perfil completo para organizar informações importantes, acompanhar os cuidados e deixar tudo prontinho para as próximas visitas ao veterinário.</p></section>
+  <div class="content-wrap"><div class="two-col">
+    <section class="panel"><h3>Informações do pet</h3>
+      <form id="pet-form"><div class="form-grid">
+        <div class="field"><label for="pet-name">Nome do pet *</label><input id="pet-name" name="pet-name" required placeholder="Como ele se chama?"></div>
+        <div class="field"><label for="pet-kind">Espécie *</label><select id="pet-kind" name="pet-kind" required><option value="">Selecione</option><option>Cachorro</option><option>Gato</option><option>Coelho</option><option>Outro</option></select></div>
+        <div class="field"><label for="breed">Raça</label><input id="breed" placeholder="Ex.: vira-lata"></div>
+        <div class="field"><label for="pet-sex">Sexo</label><select id="pet-sex"><option>Selecione</option><option>Fêmea</option><option>Macho</option><option>Não sei</option></select></div>
+        <div class="field"><label for="birth">Data de nascimento</label><input id="birth" type="date"></div>
+        <div class="field"><label for="weight">Peso (kg)</label><input id="weight" type="number" min="0" step="0.1" placeholder="Ex.: 8,5"></div>
+        <div class="field full"><label for="color">Cor ou característica marcante</label><input id="color" placeholder="Ex.: pelagem caramelo, manchinha na pata"></div>
+        <div class="field full"><label for="notes">Alergias, observações ou necessidades especiais</label><textarea id="notes" placeholder="Conte algo importante para os cuidados do seu pet"></textarea></div>
+      </div><div class="form-actions"><button class="button button-blue" type="submit">Salvar perfil do pet <span>→</span></button><span class="notice">* Campos obrigatórios</span></div></form>
+      <div class="content-heading" style="margin-top:30px"><div><h2>Seus pets</h2><p>Perfis guardados neste navegador.</p></div></div><div class="table-list" id="saved-pets"></div><p id="pets-empty" class="empty-state">Seus perfis salvos vão aparecer aqui. 🐾</p>
+    </section>
+    <aside><div class="panel" style="text-align:center;background:#fff2c9"><div style="font-size:5rem;margin:8px">🐶</div><h3>Uma fichinha cheia de amor</h3><p class="notice" style="font-size:.85rem">Com o perfil criado, você pode manter vacinas, consultas, peso e outros cuidados organizados.</p></div><div class="panel" style="margin-top:16px"><h3>Por que cadastrar?</h3><div class="table-list"><div class="list-row"><div class="list-main"><span>📋</span><span><strong>Histórico reunido</strong><small>Informações importantes em um só lugar</small></span></div></div><div class="list-row"><div class="list-main"><span>🔔</span><span><strong>Lembretes de cuidado</strong><small>Não perca datas importantes</small></span></div></div><div class="list-row"><div class="list-main"><span>🩺</span><span><strong>Compartilhe com o vet</strong><small>Ajude na consulta com dados organizados</small></span></div></div></div></div></aside>
+  </div><p class="notice">Os perfis ficam salvos no armazenamento local deste navegador e dispositivo. Não são enviados para uma conta ou sincronizados com outros aparelhos.</p></div>
+</main>
+<footer class="site-footer"><a class="brand brand-footer" href="home.html"><span class="brand-mark">🐾</span>Your<span>Pets</span></a><p>Uma vida mais feliz começa com cuidado. <span>♥</span></p><small>© 2026 YourPets</small></footer><script src="app.js"></script>
+</body></html>
